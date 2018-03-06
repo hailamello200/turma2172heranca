@@ -19,9 +19,12 @@ public class Funcionario {
         this.cargo = cargo;
         this.valorHora = valorHora;
         this.qtdeHora = qtdeHora;
+        this.salario = calcularSalario(valorHora, qtdeHora);
     }
 
-        
+     public float calculaSalario(float valorHora, float qtdeHora){
+         return valorHora*qtdeHora;
+     }   
         
         
     public String getCargo() {
@@ -54,6 +57,10 @@ public class Funcionario {
 
     public void setQtdeHora(float qtdeHora) {
         this.qtdeHora = qtdeHora;
+    }
+
+    private float calcularSalario(float valorHora, float qtdeHora) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
         
         
